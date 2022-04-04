@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style type="text/css">
+      .wrapper {
+        height: 100%;
+        min-height: 100%;
+        padding: 50px;
+        font-family: "PT Sans", "Arial", "sans-serif";
+        font-weight: 700;
+      }
+
+      .block__row {
+        border: 20px solid  #FFD700;
+        border-radius: 8px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .block__column {
+        border: 20px solid #556B2F;
+        border-radius: 8px;
+        flex-grow: 1;
+      }
+
+      .block__item {
+        background-color: #B0E0E6;
+        padding: 50px;
+        font-size: 50px;
+        border-radius: 8px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        width: 120px;
+        height: 40px;
+        margin: 0 auto;
+        border: 2px solid black;
+        background-color: rgba(255, 205, 40, 1);
+      }
+
+      a:hover {
+        background-color: rgba(255, 205, 40, 0.7);
+      }
+    </style>
+  </head>    
+  <body>
+    <div class="wrapper">
+      <div class="block">
+        <h1>Flexbox</h1>
+        <div class="block__row">
+          <div class="block__column">
+            <div class="block__item">1</div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">2</div>
+          </div>
+          <div class="block__column">
+            <div class="block__item">3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section>
+      <a href="index.html">Main</a>
+    </section>
+  </body>
+</html>
